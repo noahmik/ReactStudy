@@ -29,6 +29,8 @@ function TodoListEnter(){
 
     TodoList.appendChild(newLi);
     inputTag.value = "";
+
+    
     }
 }
 

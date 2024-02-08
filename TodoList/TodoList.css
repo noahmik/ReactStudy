@@ -41,6 +41,7 @@ h2 {
   color: white;
   font-size: 15px;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 .delete {
@@ -52,6 +53,7 @@ h2 {
   font-size: 15px;
   border-radius: 10px;
   margin-left: 10px;
+  cursor: pointer;
 }
 
 .main {
@@ -74,6 +76,7 @@ h2 {
 
 .list li {
   padding: 10px 0;
+  cursor: pointer;
   /* user-select: none; */
 }
 
