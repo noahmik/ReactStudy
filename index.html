@@ -1,12 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body></body>
-    <script src="https://unpkg.com/react@17.0.2/umd/react.production.min.js"></script>
-    <script src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.production.min.js"></script>
-
+<body>
+    <span>Total clicks : 0</span>
+    <button id="btn">CLick me!</button>
+</body>
+<script>
+    let counter = 0; // let: 변경이 가능한 변수
+    const button = document.getElementById("btn");
+    const span = document.querySelector("span");
+    function handleClick() {
+        span.innerText = `Total clicks : ${counter} `;
+        counter = counter +1;
+        console.log ("clicked!");
+    }
+    button.addEventListener ("click" ,handleClick);
+</script>
 </html>
