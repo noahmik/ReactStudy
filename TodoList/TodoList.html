@@ -4,20 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>쌈@뽕한 TodoList</title>
-    <link href="./Todo.css" rel="stylesheet">
+    <link href="./TodoList.css" rel="stylesheet">
 </head>
 <body>
     <div class="main">
         <h2>쌈@뽕한 TodoList</h2>
         <div class="idv">
             <input id="input" type="text" placeholder="할 일을 입력해봐라 하하" onkeydown="TodoListInput()">
-            <button type="button" class="button" value="추가">추가</button>
+            <button type="button" class="button" value="추가" onclick="TodoListEnter()">추가</button>
+            <button type="button" class="delete" value="추가" onclick="TodoListDelete()">전체삭제</button>
         </div>
         <div id="CheckBox">
         <ul class="list">
         </ul>
     </div>
     </div>
-    <script src="./Todo.js"></script>
+    <script src="./TodoList.js"></script>
 </body>
 </html>
