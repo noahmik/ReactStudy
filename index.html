@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body><div id="root"></div></body>
+<body>
+    <div id="root"></div>
+</body>
     <script src="https://unpkg.com/react@17.0.2/umd/react.production.min.js"></script>
     <script src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.production.min.js"></script> 
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
@@ -14,16 +16,17 @@
         function App() { 
             const [counter,setCounter] = React.useState(0);
             const onClick = () => {
-                setCounter(counter + 1);
+                // setCounter(counter + 1);
+                setCounter((current) => current + 1)
             }
             return (
             <div>
                 <h3>Total clicks: {counter}</h3>
-                <button>Click me</button>
+                <button onClick={onClick}>Click me</button>
             </div>
             );
         }
-        Rerender();
+        ReactDOM.render(<App/>,root);
         // React는 리랜더링시 변경값만 수정함(효율 높음)
     </script>
 </html>
